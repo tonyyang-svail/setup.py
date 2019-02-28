@@ -16,7 +16,6 @@ install:
 - python setup.py -q install
 
 script:
-- make protoc
 - python setup.py -q test
 
 deploy:
@@ -26,6 +25,7 @@ deploy:
     secure: 3Kqaj+7j/ilhIjbNVwk4Q17g8gZFxCpEVMChdVka3jWunmFGP5AGKZzBYitagb7QrZzQLqRgFX8Ei3mx0OznHngK98PvDV11OJbC7ZHf1Pva7NU5+YnM/kG2tg8ZBKXs2GJ6W1x4gyygZHu9xnVHwZXjBzi+fLs2AQXVC16/eb6FGwF9iCxakksQFkQj7s7fvJRwkN2yWxVCfHZKTj+uenfv7zOH9IjRs1axllplYGCqRqyr0OL4oFs+Fl3luYhk7yKn4UfkGMw9wk4jZpddo3QEjWa7/687LCFKZ6ROnDuNmI3+bXk0GR0UhVYmG6WEYrrAQRMY2AAE5ThY0zfQbe/rzKkQCv9Ma+eXkU0PsBz42dezdb+YKar7IZE7JjylFOtoA8Cum/42naYZD7SfDwGPcfS65046sPo1nu+TlKBzSx/cxGDcgm+lzfNd3nP7GFD6xBxN+ixALOT0JQqNjmnxBBCPHeyuFS9QIobFxIRrte7TyeCGOjRtZtrIdXexo2mXpjKFcWkJkoQV7sahF4KO97QDviXV+HcKoCQZeCb0c52zNnCVYuvtbMp1HYPBKJPxsYPENgCqRzEvjpv/c7yKyMFUk8mZcDiZ5xEinn0wgbVaIR2K3a1ZwosiGJJBydYRwDqo55WbofKcn+ZGGvtfQ3wnkJS7a2SN1VdQKxk=
   distributions: sdist bdist_wheel
   skip_existing: true
+  skip_cleanup: true
   on:
     tags: true
     repo: tonyyang-svail/setup.py
