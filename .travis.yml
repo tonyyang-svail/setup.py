@@ -1,24 +1,20 @@
 dist: xenial
 cache: pip
-
 language: python
 python:
 - 3.5
 - 3.6
 - 3.7
 - 3.8-dev
-
 install:
 - python setup.py -q install
-
 script:
 - python setup.py -q test
-
 deploy:
   provider: pypi
   user: tonyyang
   password:
-    secure: 3Kqaj+7j/ilhIjbNVwk4Q17g8gZFxCpEVMChdVka3jWunmFGP5AGKZzBYitagb7QrZzQLqRgFX8Ei3mx0OznHngK98PvDV11OJbC7ZHf1Pva7NU5+YnM/kG2tg8ZBKXs2GJ6W1x4gyygZHu9xnVHwZXjBzi+fLs2AQXVC16/eb6FGwF9iCxakksQFkQj7s7fvJRwkN2yWxVCfHZKTj+uenfv7zOH9IjRs1axllplYGCqRqyr0OL4oFs+Fl3luYhk7yKn4UfkGMw9wk4jZpddo3QEjWa7/687LCFKZ6ROnDuNmI3+bXk0GR0UhVYmG6WEYrrAQRMY2AAE5ThY0zfQbe/rzKkQCv9Ma+eXkU0PsBz42dezdb+YKar7IZE7JjylFOtoA8Cum/42naYZD7SfDwGPcfS65046sPo1nu+TlKBzSx/cxGDcgm+lzfNd3nP7GFD6xBxN+ixALOT0JQqNjmnxBBCPHeyuFS9QIobFxIRrte7TyeCGOjRtZtrIdXexo2mXpjKFcWkJkoQV7sahF4KO97QDviXV+HcKoCQZeCb0c52zNnCVYuvtbMp1HYPBKJPxsYPENgCqRzEvjpv/c7yKyMFUk8mZcDiZ5xEinn0wgbVaIR2K3a1ZwosiGJJBydYRwDqo55WbofKcn+ZGGvtfQ3wnkJS7a2SN1VdQKxk=
+    secure: Ft7d5ATy3VLOLLz7fMjiXgo57tB/FhsSeACGejKJ390BLpRDunvrkeR8zorwCp39CgeYXC5QCje29tBNlanacciatoTBsMBNGifcGSklzE4RL4hQ5FeoA8ffJ2SSaOfiYN7FmgfAegi9OweL7pxn6KPpy/SE1wICg7m2Lk1JwfX/oD9z3WKiYJKm6EO9M9y1DJvyc/OD+LWdCNUg+Xpyq2jDZ4ciBsttHxHNwS6jtXGYQDNobuxjUsXxcb8rABbpEsREuLu3V770hQ6vAv7Fhe0Kn/4iZB17nBjB2GFxh3LDqqfuGxW07VUv+eC35pk3ZePPOzxrFzPaZk/7K+kjv0IA0okDKzEeBoIocmNl8LYSXZqzloR2sXsJeMOiddqqIiJ+ZfNBXZpzkptcH2bOS0FJoNfliELbp1syft00NndGVD0yUki6eUdyUxISV/Re7g/P2LWzAMsYF+KMc3uqnjpNlwtEeOczu8+fMZD2lKGLdp2joC68etVJ+hWvlfM39qHth7Yb0Lt4o2bGyEEDZyQNovkbHL4nmx3Z5+XdAsWpOK5Q8rq/xf0kMba1DdkN4jMu+kfkWKIHRPtj5LVMjDag2Tjfek9+YhpeajqzjqBW0gJ4jlnS+yZTP3VciDeAjBI8zN4YXK/8o73tVOf2D0iXumCXzUlE0NPpxfHB3lQ=
   distributions: sdist
   skip_existing: true
   skip_cleanup: true
