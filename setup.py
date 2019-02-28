@@ -12,11 +12,11 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'mypackage'
+NAME = 'test_travis_pypi'
 DESCRIPTION = 'My short description for my project.'
 URL = 'https://github.com/me/myproject'
 EMAIL = 'me@example.com'
-AUTHOR = 'Awesome Soul'
+AUTHOR = 'Yang Yang'
 REQUIRES_PYTHON = '>=3.6.0'
 VERSION = None
 
